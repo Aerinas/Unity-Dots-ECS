@@ -1,58 +1,10 @@
-﻿using Unity.Burst;
-using UnityEngine;
+using Unity.Burst;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
-using Random = Unity.Mathematics.Random;
 
 namespace TMG.Survivors
 {
-    public struct EnemySpawnData : IComponentData
-    {
-        public Entity EnemyPrefab;
-        public Entity ReaperPrefab;
-        public float SpawnInterval;
-        public float SpawnDistance;
-    }
-
-    public struct EnemySpawnState : IComponentData
-    {
-        public float SpawnTimer;
-        public float ReaperSpawnTimer;
-        public Random Random;
-    }
-    
-    public class EnemySpawnerAuthoring : MonoBehaviour
-    {
-        public GameObject EnemyPrefab;
-        public GameObject ReaperPrefab;
-        public float ReaperSpawnTime;
-        public float SpawnInterval;
-        public float SpawnDistance;
-        public uint RandomSeed;
-        
-        private class Baker : Baker<EnemySpawnerAuthoring>
-        {
-            public override void Bake(EnemySpawnerAuthoring authoring)
-            {
-                var entity = GetEntity(TransformUsageFlags.None);
-                AddComponent(entity, new EnemySpawnData
-                {
-                    EnemyPrefab = GetEntity(authoring.EnemyPrefab, TransformUsageFlags.Dynamic),
-                    ReaperPrefab = GetEntity(authoring.ReaperPrefab, TransformUsageFlags.Dynamic),
-                    SpawnInterval = authoring.SpawnInterval,
-                    SpawnDistance = authoring.SpawnDistance
-                });
-                AddComponent(entity, new EnemySpawnState
-                {
-                    SpawnTimer = 0f,
-                    ReaperSpawnTimer = authoring.ReaperSpawnTime,
-                    Random = Random.CreateFromIndex(authoring.RandomSeed)
-                });
-            }
-        }
-    }
-
     public partial struct EnemySpawnSystem : ISystem
     {
         public void OnCreate(ref SystemState state)
