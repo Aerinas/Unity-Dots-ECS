@@ -1,0 +1,20 @@
+{
+  "name": "Game.Components",
+    "references": [
+      "UnityEngine.UI",
+      "Unity.Entities",
+      "Unity.Mathematics",
+      "Unity.Physics",
+      "Unity.Entities.Graphics",
+      "Unity.Collections"
+      
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false  
+}

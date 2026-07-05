@@ -3,8 +3,7 @@ using Unity.Transforms;
 
 namespace TMG.Survivors
 {
-    public struct DestroyEntityFlag : IComponentData, IEnableableComponent {}
-    
+
     [UpdateInGroup(typeof(SimulationSystemGroup), OrderLast = true)]
     [UpdateBefore(typeof(EndSimulationEntityCommandBufferSystem))]
     public partial struct DestroyEntitySystem : ISystem
