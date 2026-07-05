@@ -1,0 +1,27 @@
+{
+    "name": "Game.Systems",
+    "rootNamespace": "",
+    "references": [
+        "Game.Components",
+        "Game.Jobs",
+        "Game.UI",
+        "Game.Bootstrap",
+        "Game.Input",
+        "Unity.Entities",
+        "Unity.Mathematics",
+        "Unity.Physics",
+        "Unity.Transforms",
+        "Unity.Collections",
+        "Unity.Burst",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

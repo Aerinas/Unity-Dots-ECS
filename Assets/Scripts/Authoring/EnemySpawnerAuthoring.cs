@@ -1,8 +1,7 @@
-﻿using Unity.Burst;
+﻿
 using UnityEngine;
 using Unity.Entities;
-using Unity.Mathematics;
-using Unity.Transforms;
+
 using Random = Unity.Mathematics.Random;
 
 namespace TMG.Survivors

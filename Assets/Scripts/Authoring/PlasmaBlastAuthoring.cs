@@ -1,9 +1,6 @@
-﻿using Unity.Collections;
+﻿
 using UnityEngine;
 using Unity.Entities;
-using Unity.Physics;
-using Unity.Physics.Systems;
-using Unity.Transforms;
 
 namespace TMG.Survivors
 {

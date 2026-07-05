@@ -1,0 +1,9 @@
+{
+  "name": "Game.UI",
+    "references": [
+        "Unity.Entities",
+        "Unity.Collections",
+        "Unity.TextMeshPro",
+        "UnityEngine.UI"
+    ]
+}

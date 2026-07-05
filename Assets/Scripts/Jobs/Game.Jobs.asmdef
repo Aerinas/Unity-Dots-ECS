@@ -1,0 +1,20 @@
+{
+  "name": "Game.Jobs",
+    "references": [
+        "Game.Components",
+        "Unity.Entities",
+        "Unity.Mathematics",
+        "Unity.Physics",
+        "Unity.Collections",
+        "Unity.Burst",
+        "Unity.Transforms"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

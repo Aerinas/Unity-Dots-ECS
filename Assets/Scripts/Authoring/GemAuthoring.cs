@@ -1,8 +1,8 @@
-﻿using Unity.Burst;
+﻿
 using UnityEngine;
 using Unity.Entities;
-using Unity.Physics;
-using Unity.Collections;
+
+
 
 namespace TMG.Survivors
 {
